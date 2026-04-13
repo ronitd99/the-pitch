@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="About The Pitch — a football blog covering tactics, transfers, match analysis, and culture.">
+  <title>About — The Pitch</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Playfair+Display:wght@700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container nav-content">
+      <a href="index.html" class="logo">
+        <span class="logo-icon">⚽</span>
+        <span class="logo-text">The Pitch</span>
+      </a>
+      <button class="mobile-menu-btn" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="category.html?cat=tactics">Tactics</a></li>
+        <li><a href="category.html?cat=transfers">Transfers</a></li>
+        <li><a href="category.html?cat=analysis">Match Analysis</a></li>
+        <li><a href="category.html?cat=players">Player Analysis</a></li>
+        <li><a href="category.html?cat=culture">Culture</a></li>
+        <li><a href="about.html" class="active">About</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="about-hero">
+      <h1>About The Pitch</h1>
+      <p>I cover the beautiful game with the depth it deserves. Tactics, data, stories, and a deep love for football.</p>
+    </div>
+  </div>
+
+  <div class="about-content">
+    <p>The Pitch was born out of a simple frustration: most football coverage skims the surface. I wanted something different. Articles that go deeper, analysis that actually teaches you something, and stories that capture why football matters to billions of people around the world.</p>
+
+    <h2>What I Cover</h2>
+    <p>My content spans four core categories, each designed to give you a richer understanding of the game:</p>
+
+    <div class="highlight-box">
+      <h3>Tactics</h3>
+      <p>Deep dives into formations, playing styles, pressing systems, and the strategic chess matches that define modern football. I break down the "why" behind what you see on the pitch.</p>
+    </div>
+
+    <div class="highlight-box">
+      <h3>Transfers</h3>
+      <p>Beyond the rumors and the fees. I analyze transfers through the lens of tactical fit, squad building, and long-term value. Think of it like understanding the market the way a sporting director would.</p>
+    </div>
+
+    <div class="highlight-box">
+      <h3>Match Analysis</h3>
+      <p>Detailed breakdowns of the biggest matches in European and world football. Phase-by-phase analysis of how games are won, lost, and shaped by tactical decisions.</p>
+    </div>
+
+    <div class="highlight-box">
+      <h3>Player Analysis</h3>
+      <p>In-depth breakdowns of individual players. Their strengths, weaknesses, playing style, and impact on the game. From rising stars to established legends.</p>
+    </div>
+
+    <div class="highlight-box">
+      <h3>Culture</h3>
+      <p>Football is more than what happens between the white lines. I cover fan culture, the business of football, grassroots movements, and the stories that make this sport the world's obsession.</p>
+    </div>
+
+    <h2>Monetization & Partnerships</h2>
+    <p>The Pitch is supported by advertising, affiliate partnerships, and a growing newsletter community. I'm always open to working with brands that align with my values and audience.</p>
+    <p>If you're interested in advertising or sponsorship opportunities, get in touch below.</p>
+
+    <h2 id="contact">Get in Touch</h2>
+    <p>Have a story tip, a partnership proposal, or just want to talk football? I'd love to hear from you.</p>
+
+    <form class="contact-form" onsubmit="handleContactSubmit(event)">
+      <input type="text" placeholder="Your name" required>
+      <input type="email" placeholder="Your email" required>
+      <textarea placeholder="Your message..." required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">
+          <span class="logo-icon">⚽</span>
+          <span class="logo-text">The Pitch</span>
+        </a>
+        <p>Covering the beautiful game with depth, data, and passion.</p>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <h4>Categories</h4>
+          <a href="category.html?cat=tactics">Tactics</a>
+          <a href="category.html?cat=transfers">Transfers</a>
+          <a href="category.html?cat=analysis">Match Analysis</a>
+          <a href="category.html?cat=players">Player Analysis</a>
+          <a href="category.html?cat=culture">Culture</a>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <a href="about.html">About</a>
+          <a href="about.html#contact">Contact</a>
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms of Use</a>
+        </div>
+        <div class="footer-col">
+          <h4>Follow Me</h4>
+          <a href="https://x.com/RonitDe52353108" target="_blank" rel="noopener">Twitter / X</a>
+          <a href="https://www.instagram.com/ronit_day/" target="_blank" rel="noopener">Instagram</a>
+          <a href="https://www.youtube.com/@futbolkrazy2778" target="_blank" rel="noopener">YouTube</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 The Pitch. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>
+    function handleContactSubmit(e) {
+      e.preventDefault();
+      showToast("Message sent! I'll get back to you soon.");
+      e.target.reset();
+    }
+  </script>
+</body>
+</html>
